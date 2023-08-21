@@ -285,6 +285,27 @@ section {
   margin-left: 2%;
 }
 
+@media (max-width: 1080px) {
+
+  .heading-About{
+    margin-bottom: 0%;
+  }  
+  
+    #About {
+      flex-direction: column;
+      align-items: center;
+      height: 50%;
+      width: 100%;
+      margin-left: 0%;
+    }
+  
+    .introline-2 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+  }
+
 @media (max-width: 768px) {
 
 .heading-About{
