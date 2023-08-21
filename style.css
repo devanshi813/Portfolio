@@ -88,7 +88,7 @@ body, h1, p {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   #Home-a {
     padding: 5px;
   }
@@ -195,7 +195,7 @@ nav a {
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   #headers {
     text-align: center;
     padding: 0px;
@@ -332,7 +332,7 @@ section {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
 
   .heading-About{
     margin-bottom: 3%;
