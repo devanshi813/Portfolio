@@ -225,7 +225,7 @@ nav a {
   }
 
   .nav-links li a {
-    font-size: 13px; /* Adjust the font size as needed */
+    font-size: 14.5px; /* Adjust the font size as needed */
   }
 
   .nav-links.active {
@@ -769,7 +769,7 @@ animation: gradientAnimation 10s ease infinite; */
   background-color: #ddd;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   #Contact{
     margin: 0 -5%;
     padding: 0px;
