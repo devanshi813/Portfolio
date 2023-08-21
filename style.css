@@ -54,12 +54,12 @@ body, h1, p {
 #name {
   font-size: 3rem;
   background: transparent;
-  color : rgba(18,3,32,255);
+  color : #24034f;
 }
 
 #introline {
   font-size: 2rem;
-  color : rgba(18,3,32,255);
+  color :#24034f;
   margin-top: 10px;
   background: transparent;
 
@@ -86,6 +86,23 @@ body, h1, p {
     margin-top: 50%;
   }
 
+}
+
+@media (max-width: 400px) {
+  #Home-a {
+    padding: 5px;
+  }
+  #name {
+    padding: 20px;
+    font-size: 50px;
+  }
+  #introline {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  #Home {
+    margin-top: 20%;
+  }
 }
 
 
@@ -178,22 +195,43 @@ nav a {
 }
 
 
-/* Responsive Styles for screens with a maximum width of 320px */
-/* @media (max-width: 320px) {
+@media (max-width: 400px) {
   #headers {
     text-align: center;
-    padding: 5px;
+    padding: 0px;
+    width: 100%; 
   }
 
   #icon {
-    margin: 5px auto;
+    text-align: center; 
+    max-width: 18%;
+    margin-left: -2%;
+  }
+  
+  #icon img {
+    max-width: 100%;
+    height: 10vh;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .nav-links li {
-    padding: 5px;
+    padding: 0px 0px;
+    white-space: nowrap;
   }
-} */
 
+  .nav-links li a {
+    font-size: 14.5px; /* Adjust the font size as needed */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
 
 
 /* Section Styles */
@@ -273,6 +311,33 @@ section {
 
 }
 
+@media (max-width: 400px) {
+
+  .heading-About{
+    margin-bottom: 3%;
+  }
+  
+  .heading-Certificate{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+    #About {
+      flex-direction: column;
+      align-items: center;
+      height: 50%;
+      width: 100%;
+      margin-left: 0%;
+    }
+  
+    .introline-2 {
+      width: 100%;
+      margin: 5px 0;
+      font-size: 15px;
+    }
+  
+  }
+  
 
 /* button download cv */
 
@@ -423,9 +488,12 @@ width: 197px;
 
 @media (max-width: 768px) {
   .project-box, .box-container {
-    width: calc(100% - 20px); /* One box in each row */
-  }
+    width: calc(50% - 10px); /* One box in each row */
+    height: 80px;
+    padding: 0px;
+    margin: 0px;  }
 }
+
 
 
 /* Contact Section */
@@ -523,7 +591,14 @@ textarea {
 
 @media (max-width: 768px) {
   .project-box {
-    width: calc(100% - 20px); /* One box in each row */
+    width: calc(50% - 10px); /* One box in each row */
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .heading-p{
+    margin-bottom: 0px;
   }
 }
 
@@ -673,6 +748,23 @@ animation: gradientAnimation 10s ease infinite; */
   background-color: #ddd;
 }
 
+@media (max-width: 400px) {
+  #Contact{
+    margin: 0 -5%;
+    padding: 0px;
+    background: linear-gradient(45deg, #2f0a5e, #b32c8f, #6a82fb, #094d71);
+    animation: contactgradientAnimation 5s ease infinite;
+    box-sizing: border-box;
+    background-size: 400% 400%;
+
+  }
+
+  .form-control{
+    max-width: 100%;
+    margin-left: 8%;
+  }
+
+}
 
 
 /* Footer */
