@@ -1,0 +1,696 @@
+/* General Styling */
+/* Reset some default margin and padding */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: rgba(18,3,32,255);
+}
+
+/* Style for the entire Home section */
+/* #Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the section takes up at least the viewport height */
+  /* width: 100%;
+  height: 100vh;
+} */
+
+/* Style for the content inside Home-a */
+
+#home-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #2f0a5e, #b32c8f, #6a82fb, #094d71);
+  max-width: 100%; /* Add this line to limit width on smaller screens */
+  padding: 0 20px; /* Add horizontal padding to avoid overflowing content */
+  box-sizing: border-box;
+  background-size: 400% 400%;
+  animation: homegradientAnimation 10s ease infinite;
+}
+
+
+
+@keyframes homegradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#Home-a {
+  text-align: center;
+  padding: 20px;
+}
+
+#name {
+  font-size: 3rem;
+  background: transparent;
+  color : rgba(18,3,32,255);
+}
+
+#introline {
+  font-size: 2rem;
+  color : rgba(18,3,32,255);
+  margin-top: 10px;
+  background: transparent;
+
+}
+
+.wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  #Home-a {
+      padding: 5px;
+  }
+  #name {
+      padding: 50px;
+  }
+  #introline {
+      font-size: 20px;
+  }
+  #Home {
+    margin-top: 50%;
+  }
+
+}
+
+
+  
+
+/* Header Navigation */
+#headers {
+  background-color: rgba(35, 1, 54, 255);
+  color: white;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top:0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icon {
+  margin: -2.5%;
+  margin-left: 1%;
+}
+
+#icon img {
+  max-width: 30%;
+  height: inherit;
+}
+
+
+.nav-links {
+  text-align: right;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+  padding: 0px 30px 0px 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #headers {
+    text-align: center;
+    padding: 0px;
+    width: 100%; 
+  }
+
+  #icon {
+    text-align: center; 
+    max-width: 20%;
+    margin-left: -2%;
+  }
+  
+  #icon img {
+    max-width: 100%;
+    height: 10vh;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    padding: 0px 4px;
+    white-space: nowrap;
+  }
+
+  .nav-links li a {
+    font-size: 25px; /* Adjust the font size as needed */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+
+/* Responsive Styles for screens with a maximum width of 320px */
+/* @media (max-width: 320px) {
+  #headers {
+    text-align: center;
+    padding: 5px;
+  }
+
+  #icon {
+    margin: 5px auto;
+  }
+
+  .nav-links li {
+    padding: 5px;
+  }
+} */
+
+
+
+/* Section Styles */
+section {
+  padding: 20px;
+}
+
+
+
+
+/* About Section */
+.heading-About,
+.heading-Contact{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  color: #f4faf9;
+  justify-content: center;
+  align-items: center;
+}
+
+#About-sec{
+    margin: 5% 0;
+    background: linear-gradient(45deg, #220548, #6b2d97,#8427c6, #220548);
+}
+
+#About {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start;
+  width: 60%;
+  margin-left: 20%;
+  height: 65vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.introline-2 {
+  font-size: 20px;
+  width: 48%;
+  text-align: justify;
+}
+
+.left-content {
+  margin-right: 2%;
+}
+
+.right-content {
+  margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+
+.heading-About{
+  margin-bottom: 5%;
+}
+
+.heading-Certificate{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+  #About {
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .introline-2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+}
+
+
+/* button download cv */
+
+.wrapper {
+  margin-left: 70px;
+}
+
+.box-head{
+width: 197px;
+}
+
+
+/* Inside the .wrapper class */
+.wrapper {
+  text-align: center;
+  margin-left: -5%;
+  margin-top: 20px;
+}
+
+/* .Button-a styles */
+.Button-a {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #48195f;
+  border: 2px solid #450963;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  transition: all 0.35s;
+  overflow: hidden;
+  margin: 0 auto; /* Center horizontally */
+}
+
+
+.form-group button{
+  color:#48195f;
+  border: 2px solid #450963;
+  margin-left: 6rem;
+}
+
+.Button-a span {
+  position: relative;
+  z-index: 2;
+}
+
+.Button-a:hover {
+  color: #fff;
+}
+
+.Button-a:hover:after {
+  width: 100%;
+}
+
+
+/* Certifications */
+
+#Certification-sec{
+  width: 75%;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box;
+}
+
+.heading-Certificate{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  color: #f4faf9;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Certi-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between boxes as needed */
+  margin: 0 -10px; /* Add negative margin to account for gap */
+}
+
+.box-container{
+  width: calc(40% - 20px); /* Two boxes in each row */
+  height: 15rem;
+  background-color: rgba(35, 1, 54, 0.8); /* Transparent purple */
+  box-shadow: 0px 0px 20px rgba(253, 251, 253, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.3s; /* Added transition property */
+  position: relative; /* Added relative positioning */
+  margin: 10px; /* Add margin for spacing */
+}
+
+/* image */
+.box {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.box-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2; /* Ensure text is on top of the image */
+}
+
+.box-container:hover .box-head {
+  opacity: 1; /* Show on hover */
+}
+
+.box-container:hover {
+  transform: scale(0.95); /* Scale down on hover */
+  background-color: rgba(35, 1, 54, 1); /* Full purple on hover */
+}
+
+.box-container:hover .box {
+  filter: brightness(40%); /* Reduce brightness on hover */
+}
+
+@media (max-width: 768px) {
+  .project-box, .box-container {
+    width: calc(100% - 20px); /* One box in each row */
+  }
+}
+
+
+/* Contact Section */
+.contact-links-section2, form {
+  margin: 10px 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* projects */
+
+#project-sec {
+  width: 75%;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  box-sizing: border-box;
+}
+
+.Pimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between boxes as needed */
+  margin: 0 -10px; /* Add negative margin to account for gap */
+}
+
+.project-box {
+  width: calc(40% - 20px); /* Two boxes in each row */
+  height: 15rem;
+  background-color: rgba(35, 1, 54, 0.8); /* Transparent purple */
+  box-shadow: 0px 0px 20px rgba(253, 251, 253, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.3s; /* Added transition property */
+  position: relative; /* Added relative positioning */
+  margin: 10px; /* Add margin for spacing */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.project-box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2; /* Ensure text is on top of the image */
+}
+
+.project-box:hover .project-box-text {
+  opacity: 1; /* Show on hover */
+}
+
+.project-box:hover {
+  transform: scale(0.95); /* Scale down on hover */
+  background-color: rgba(35, 1, 54, 1); /* Full purple on hover */
+}
+
+.project-box:hover .Pimg {
+  filter: brightness(40%); /* Reduce brightness on hover */
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    width: calc(100% - 20px); /* One box in each row */
+  }
+}
+
+
+/* Styles for the Freelancing Section */
+.freelancing-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.freelancing {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10%;
+  text-align: center;
+  background: linear-gradient(45deg, #2f0a5e, #b32c8f, #6a82fb, #094d71);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#freelancingtext {
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .freelancing {
+    width: 90%;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive Styles for screens with a maximum width of 320px */
+@media (max-width: 320px) {
+  .freelancing {
+    width: 95%;
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+}
+
+/* contacts */
+
+.contact-links-section1 {
+  max-width: 100%;
+  height: 20%;
+  margin-top: 2%;
+  margin-bottom: 2px;
+  padding: 2.5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#Contact{
+  margin: 0px -1.3%;
+  padding: 0px;
+  background: linear-gradient(45deg, #2f0a5e, #b32c8f, #6a82fb, #094d71);
+  animation: contactgradientAnimation 10s ease infinite;
+  box-sizing: border-box;
+  background-size: 400% 400%;
+}
+
+@keyframes contactgradientAnimation {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+
+.contact-links img{
+width: 40px;
+height: 40px;
+padding: 30px;
+}
+
+/* background: linear-gradient(45deg, #ff6b6b, #556270, #6a82fb, #ff6b6b);
+background-size: 400% 400%;
+animation: gradientAnimation 10s ease infinite; */
+
+.contact-links-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  margin-top: 2%;
+  margin-left: -40px;
+  margin-bottom: 3%;
+}
+
+.form-control {
+  width: 120%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #3d0d5e;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.form-control:focus {
+  background-color: #fff;
+  border: 2px solid rgb(16, 2, 110);
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(9, 2, 96, 0.5);
+}
+
+/* Adding a placeholder style */
+.form-control::placeholder {
+  color: rgb(58, 5, 122);
+}
+
+/* Adding hover effect */
+.form-control:hover {
+  background-color: #ddd;
+}
+
+
+
+/* Footer */
+.footerh1 {
+  background: linear-gradient(45deg, #2f0a5e, #b32c8f);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;  color: white;
+  text-align: center;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 15px;
+  }
+
+
+
+.heading-p {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px;
+}
